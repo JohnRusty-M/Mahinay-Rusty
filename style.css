@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #f4f6ff;
+}
+h1, h2, h3 { margin: 0 0 10px 0; }
+a { color: #2f0eec; }
+
+nav {
+  background: #080808;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo { 
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold; 
+}
+
+nav ul { 
+list-style: none; 
+margin: 0; padding: 0;
+display: 
+flex; gap: 20px; 
+}
+
+nav ul a { 
+color: white; 
+text-decoration: none; 
+}
+
+nav ul a:hover { 
+color: white; 
+}
+
+#menu-button { 
+display: none; } 
+
+.header {
+  background: #7780ff;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.header h1 { 
+font-size: 50px; 
+}
+
+.header .job { 
+  color: #4a0cf3; 
+  font-size: 22px; 
+}
+
+.header button {
+  margin-top: 15px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hello-message { margin-top: 15px; font-size: 18px; }
+
+.section {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgb(215, 210, 255);
+  border-radius: 12px;
+  border-left: 8px solid #1f3fd0;
+  border-right: 8px solid #1f3fd0;
+}
+
+.education-item {
+  margin-bottom: 25px;
+}
+
+.profile-pic {
+width: 300px; 
+border-radius: 50%; 
+border: 4px solid #1f3fd0; 
+}
+
+.about-row {  
+gap: 25px; 
+align-items: center; 
+margin-bottom: 10px;
+}
+
+.about-row {
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.project-pic { 
+  width: 100px; 
+  height: 100px;
+  max-width: 100px; 
+  object-fit: cover;
+  border: 4px solid #1f3fd0;
+  border-radius: 8px; 
+}
+
+footer {
+  background: #14172b;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+footer a { color: #ffc93c; }
+
+@media (max-width: 700px) {
+  nav { flex-wrap: wrap; }
+  #menu-button { display: block; }
+  nav ul { display: none; flex-direction: column; width: 100%; margin-top: 10px; }
+  nav ul.show { display: flex; }
+  .header h1 { font-size: 34px; }
+  .about-row { flex-direction: column; text-align: center; }
+}
